@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/5c0d3eff4d.js" crossorigin="anonymous"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                container: {
+                    center: true,
+                },
+                extend: {
+                    colors: {
+                        primary: '#f59e0b',
+                        light: '#fffbeb',
+                        dark: 'rgb(15 23 42)'
+                    },
+                },   
+            }
+        }
+    </script>
+
+</head>
+<body class="bg-dark">
+
+    <!-- Navbar Start -->
+    <header>    
+        <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded bg-primary">
+        <div class="container flex flex-wrap justify-between items-center mx-auto">
+            <p class="text-3xl font-bold text-dark">Karinda Amelia</p>
+            <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+            <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                <li>
+                <a href="#" class="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white lg:text-xl font-semibold" aria-current="page">Home</a>
+                </li>
+                <li>
+                <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent lg:text-xl font-semibold">About</a>
+                </li>
+                <li>
+                <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent lg:text-xl font-semibold">Services</a>
+                </li>
+                <li>
+                <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent lg:text-xl font-semibold">Contact</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+        </nav>
+    </header>
+    <!-- Navbar End -->
+
+    <!-- Hero Section Start -->
+    <section id="home" class="pt-36">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="w-full self-center px-5 m-auto lg:w-1/2 lg:pl-25">
+                    <h2 class="text-2xl leading-tight font-bold text-light lg:text-5xl">Hello, I'm</h2>
+                    <h1 class="text-4xl font-bold leading-tight text-primary lg:text-7xl">Karinda Amelia</h1>
+                    <p class="text-light font-normal leading-relaxed mb-4 lg:text-2xl">Informatics Engineering at Sriwijaya University.</p>
+                    
+                    <a href="#" class="text-base font-semibold text-light bg-primary px-4 py-2 rounded-lg hover:shadow-lg hover:bg-amber-400 lg:text-lg">Download CV</a>
+                </div>
+
+                <div class="w-full self-end lg:w-1/2 m-auto">
+                    <div class="mt-10" >
+                        <img src="img/karinda.png" alt="Karinda Amelia" height="300" class="max-w-full mx-auto lg:h-96 m-auto mb-20 lg:pl-40" >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- About me Start -->
+    <section>
+        <div class="container text-light">
+            <div class="flex flex-wrap border-2 rounded-3xl bg-slate-700 w-3/4 m-auto shadow-lg shadow-sky-400/50">
+                <div class="w-full self-center px-5 mb-1">
+                    <div class="w-full text-light self-center px-5 mb-10 t mt-30">
+                        <h2 class="text-2xl font-bold text-primary lg:text-3xl m-auto pt-6">About Me</h2>
+                        <p class="text-primary pt-2 m-auto font-semibold lg:text-xl">Informatics Engineering, Sriwijaya University</p>
+                        <p class="text-light m-auto pt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About me End -->
+
+    <!-- Section Skills Start -->
+    <section class="pb-28">
+        <div class="container text-light">
+            <div class="flex flex-wrap pt-32 pr-2 pl-2 pb-24">
+                <div class="w-full">
+                    <h2 class="text-2xl font-bold text-primary lg:text-3xl m-auto pt-6">Skills</h2>
+                </div>
+                <div class="flex flex-wrap w-full pt-12 justify-center justify-self-center" >
+                    <img src="img/html.png" alt="HTML" class="w-32 h-32 p-3">
+                    <img src="img/css.png" alt="CSS" class="w-32 h-32 p-3">
+                    <img src="img/javascript.png" alt="JavaScript" class="w-32 h-32 p-3">
+                    <img src="img/php.png" alt="PHP" class="w-32 h-32 p-3">
+                    <img src="img/java.png" alt="Java" class="w-32 h-32 p-3">
+                    <img src="img/mysql.png" alt="Mysql" class="w-32 h-32 p-3">
+                    <img src="img/mariadb.png" alt="MariaDB" class="w-32 h-32 p-3">
+                    <img src="img/git.png" alt="Git" class="w-32 h-32 p-3">
+                    <img src="img/xd.png" alt="XD" class="w-32 h-32 p-3">
+                    <img src="img/figma.png" alt="Figma" class="w-32 h-32 p-3">
+                    <img src="img/canva.png" alt="Canva" class="w-32 h-32 p-3">
+                    <img src="img/msoffice.png" alt="Ms.Office" class="w-32 h-32 p-3">
+                </div>
+                <div class="flex flex-wrap w-full pt-55 p-5 justify-center">
+                    <div class="card1 flex flex-wrap w-72 h-72 justify-center">
+                        <img src="img/uiux.jpg" alt="" class="w-52 h-52 pt-7 flex">
+                        <h4 class="text-primary text-xl font-bold leading-relaxed mb-4 pt-2 lg:text-2xl flex">UI/UX Designer</h4>
+                        <p class="text-light m-auto pt-1 pr-3 pl-3 flex">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolores aut vel optio officia possimus quo sit assumenda, omnis unde voluptatum voluptatibus ipsa voluptatem, quod provident natus qui accusamus numquam!</p>
+                    </div>
+                    <div class="card2 flex flex-wrap w-72 h-72 justify-center">
+                        <img src="img/front end.jpg" alt="" class="w-52 h-52 pt-7">
+                        <h4 class="text-primary text-xl font-bold leading-relaxed mb-4 pt-2 lg:text-2xl">Front End Developer</h4>
+                        <p class="text-light m-auto pt-1 pr-3 pl-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolores aut vel optio officia possimus quo sit assumenda, omnis unde voluptatum voluptatibus ipsa voluptatem, quod provident natus qui accusamus numquam!</p>
+                    </div>
+                    <div class="card3 flex flex-wrap w-72 h-72 justify-center">
+                        <img src="img/web developer.jpg" alt="" class="w-52 h-52 pt-7">
+                        <h4 class="text-primary text-xl font-bold leading-relaxed mb-4 pt-2 lg:text-2xl">Web Developer</h4>
+                        <p class="text-light m-auto pt-1 pr-3 pl-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolores aut vel optio officia possimus quo sit assumenda, omnis unde voluptatum voluptatibus ipsa voluptatem, quod provident natus qui accusamus numquam!</p>
+                    </div>
+                    <div class="card4 flex flex-wrap w-72 h-72 justify-center">
+                        <img src="img/data analyst.jpg" alt="" class="w-52 h-52 pt-7">
+                        <h4 class="text-primary text-xl font-bold leading-relaxed mb-4 pt-2 lg:text-2xl">Data Analyst</h4>
+                        <p class="text-light m-auto pt-1 pr-3 pl-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolores aut vel optio officia possimus quo sit assumenda, omnis unde voluptatum voluptatibus ipsa voluptatem, quod provident natus qui accusamus numquam!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section Skills End -->
+
+    <!-- Contact Start -->
+    <section class="bg-slate-700 pt-16 flex flex-wrap">
+        <div class="pr-20 pl-20 pl-24">
+            <div class="w-full text-primary font-bold text-xl lg:text-2xl pb-5">
+                <h4>If You Have Any Project In Your Mind</h4>
+                <p>Contact Me On :</p>
+            </div>
+            <!-- Table Start -->
+            <div class="w-full text-light">
+                <table class="table-auto pr-20 pl-0">
+                        <tr>
+                            <td><i class="fa-solid fa-phone"></i>    No.Telp     : +082176273089</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa-solid fa-envelope"></i>    E-mail   : karindaamelia21@gmail.com</td>
+                        </tr>
+                        <tr>  
+                            <td><i class="fa-brands fa-linkedin"></i>    Linkedln   :  karindaamelia</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa-brands fa-square-github"></i>    Github     :  karindaamelia</td>
+                        </tr>
+                </table>
+            </div>
+            </div>
+            <!-- Table End -->
+
+            <!-- Form Start -->
+            <div class="w-full max-w-xs pt-5 flex pl-24 lg:pl-2">
+                <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 w-full ">
+                    <div class="mb-4">
+                        <label class="block text-gray-700 text-sm font-bold mb-2 text-light" for="username ">Masukkan Nama</label>
+                        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="nama" type="text" placeholder="Name">
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700 text-sm font-bold mb-2 text-light" for="username">   Masukkan pertanyaan : </label>
+                        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="nama" type="text" placeholder="Question">
+                    </div>
+                    <button class="bg-primary hover:bg-amber-400 lg:text-lg text-white font-bold py-2 px-4 rounded">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <!-- Form End -->
+        </div>
+    </section>
+    <!-- Contact End -->
+
+</body>
+</html>
